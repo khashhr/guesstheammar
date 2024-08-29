@@ -16,15 +16,12 @@
         let guess         = document.getElementById("guess").value
         let resultElement = document.getElementById("result");
    
-        if(guess == secretNumber)
-        {
-         resultElement.textContent="congraz, Betul!!! ammar SUKA INDAH";
-        }
-        else if (guess > secretNumber){
+        if(guess == secretNumber){
+          resultElement.textContent = "congraz, Betul!!! ammar SUKA INDAH";
+        }else if (guess > secretNumber){
           resultElement.textContent = "Nombor Besar, nombor lebih kecil dari tekaan nombor";
-        }
-        else{
-        resultElement.textContent = "Nombor Kecil, nombor lebih besar dari tekaan nombor";
+        }else{
+          resultElement.textContent = "Nombor Kecil, nombor lebih besar dari tekaan nombor";
         }
     }
 
