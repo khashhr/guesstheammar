@@ -6,30 +6,27 @@
   <h1>Guess The Ammar</h1>
   <p>Im thinking of a number between 1 to 100.
     Can you guess it?</p>
-  <input type ="number" placeholder ="Insert Number"
-    id="guess"></input>
+  <input type ="number" placeholder ="Insert Number" id="guess"></input>
   <button onclick="checkGuess()">Guess</button>
   <p id="result"></p>
 </body>
   <script>
     let secretNumber = Math.floor(Math.random() * 100) + 1;
- 
-  function checkGuess(){
-
-  let guess = document.getElementById("guess").value
-  let resultElement = document.getElementById("result");
- 
-  if(guess == secretNumber)
-  {
-   resultElement.textcontent="congraz, Betul!!! ammar SUKA INDAH"
-  }
-  else if (guess > secretNumber){
-    resultElement.textcontent = "Nombor Besar, nombor lebih kecil dari tekaan nombor"
-  }
-  else{
-  resultElement.textcontant = "Nombor Kecil, nombor lebih besar dari tekaan nombor"
-  }
-}
+    function checkGuess(){
+        let guess         = document.getElementById("guess").value
+        let resultElement = document.getElementById("result");
+   
+        if(guess == secretNumber)
+        {
+         resultElement.textContent="congraz, Betul!!! ammar SUKA INDAH";
+        }
+        else if (guess > secretNumber){
+          resultElement.textContent = "Nombor Besar, nombor lebih kecil dari tekaan nombor";
+        }
+        else{
+        resultElement.textContent = "Nombor Kecil, nombor lebih besar dari tekaan nombor";
+        }
+    }
 
   </script>
 </html>
